@@ -30,7 +30,7 @@ public class PrincipalConversordeMonedas {
                     System.out.println("Ingrese el valor que desea convertir");
                     amount = scAmount.nextDouble();
                     Moneda moneda = conversion.buscaMoneda("USD", "ARS", amount);
-                    System.out.println("\n" + amount + " " + moneda.base_code() + " son " + moneda.conversion_result() +
+                    System.out.println("El valor" + amount + " " + moneda.base_code() + " corresponde al valor final de: " + moneda.conversion_result() +
                             " en " + moneda.target_code()+ "\n");
                     break;
 
@@ -38,14 +38,14 @@ public class PrincipalConversordeMonedas {
                     System.out.println("Ingrese el valor que desea convertir");
                     amount = scAmount.nextDouble();
                     moneda = conversion.buscaMoneda("ARS", "USD", amount);
-                    System.out.println("\n" + amount + " " + moneda.base_code() + " es " + moneda.conversion_result() + " en " + moneda.target_code());
+                    System.out.println("El valor" + amount + " " + moneda.base_code() + " corresponde al valor final de: " + moneda.conversion_result() + " en " + moneda.target_code());
                     break;
 
                 case 3:
                     System.out.println("Ingrese el valor que desea convertir");
                     amount = scAmount.nextDouble();
                     moneda = conversion.buscaMoneda("USD", "BRL", amount);
-                    System.out.println("\n" + amount + " " + moneda.base_code() + " es " + moneda.conversion_result() + " en " + moneda.target_code());
+                    System.out.println("El valor" + amount + " " + moneda.base_code() + " corresponde al valor final de: " + moneda.conversion_result() + " en " + moneda.target_code());
                     break;
 
                 case 4:
@@ -59,14 +59,14 @@ public class PrincipalConversordeMonedas {
                     System.out.println("Ingrese el valor que desea convertir");
                     amount = scAmount.nextDouble();
                     moneda = conversion.buscaMoneda("USD", "COP", amount);
-                    System.out.println("\n" + amount + " " + moneda.base_code() + " es " + moneda.conversion_result() + " en " + moneda.target_code());
+                    System.out.println("El valor" + amount + " " + moneda.base_code() + " corresponde al valor final de: " + moneda.conversion_result() + " en " + moneda.target_code());
                     break;
 
                 case 6:
                     System.out.println("Ingrese el valor que desea convertir");
                     amount = scAmount.nextDouble();
                     moneda = conversion.buscaMoneda("COP", "USD", amount);
-                    System.out.println("\n" + amount + " " + moneda.base_code() + " es " + moneda.conversion_result() + " en " + moneda.target_code());
+                    System.out.println("El valor" + amount + " " + moneda.base_code() + " corresponde al valor final de: " + moneda.conversion_result() + " en " + moneda.target_code());
                     break;
 
             }
